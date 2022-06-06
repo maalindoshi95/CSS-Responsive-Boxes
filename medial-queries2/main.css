@@ -1,3 +1,81 @@
 body {
   background: papayawhip;
 }
+
+*{
+  border: 1px solid teal;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.a{
+  background-color: aqua;
+  height: 200px;
+  width: 1000px;
+}
+
+.b{
+  background-color: purple;
+  height: 500px;
+  width: 1000px;
+}
+
+.c{
+  display: inline-flex;
+  background-color: pink;
+  height: 150px;
+  width: 150px;
+}
+
+.d{
+  display: inline-flex;
+  background-color: yellow;
+  height: 150px;
+  width: 150px;
+}
+
+.e{
+  display: inline-flex;
+  background-color: black;
+  height: 150px;
+  width: 150px;
+}
+
+.f{
+  background-color: palegreen;
+  height: 200px;
+  width: 1000px;
+}
+
+@media (min-width:600px){
+  .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .a{
+    height: 33vh;
+    width: 100vw;
+  }
+  .b{
+    height: 33vh;
+    width: 66vw;
+  }
+  .c,.d,.e{
+    height: 33vh;
+    width: 25vw;
+  }
+  .f{
+    height: 66vh;
+    width: 25vw;
+  }
+}
